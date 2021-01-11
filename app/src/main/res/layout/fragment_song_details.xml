@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/detailsgradient"
+    tools:context=".SongDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/descroiption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/albuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descroiption"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/price"
+            android:textColor="#15811B"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/albuma"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
